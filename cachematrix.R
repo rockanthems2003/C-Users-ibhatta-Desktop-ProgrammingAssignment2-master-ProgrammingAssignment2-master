@@ -1,3 +1,7 @@
+## this function is setting x as a global variable so that it can be accessed outside of the function within which it is created.
+## m is assigned NULL here, but we will input the value of the inverse matrix into m.
+##The input to the makeCacheMatrix function can only be a matrix.
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -11,6 +15,10 @@ makeCacheMatrix <- function(x = matrix()) {
        setinv = setinv,
        getinv = getinv)
 }
+
+##we are assinging the value of the matrix to the variable called data.
+## We stored the inversed matrix into the variable m.
+## cachesolve returns m (inversed matrix) as the return value.
 
 cacheSolve <- function(x, ...) {
   m <- x$getinv()
