@@ -24,7 +24,6 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-cacheSolve(makeCacheMatrix(matrix(c(1,2,3,4),nrow = 2)))
 
 
 
